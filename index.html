@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    content="We provide design and software digital services that are fully-flexible and powerful. Order dedicated software for general IT, CRM systems, web application development and more. "
+    name="description" />
+  <meta
+    content="provide design and software digital services, Order dedicated software for general IT, CRM systems, web application development"
+    name="keywords" />
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="./assets/stylesheets/tailwind-styles.css">
+  <link href="./assets/images/favicon.ico" rel="icon" />
+  <link href="./assets/images/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link rel="stylesheet" href="./assets/stylesheets/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <title>Elements Info Tech</title>
+</head>
+
+<body>
+  <div class="site-container">
+    <!-- Navbar -->
+    <div class="grid grid-cols-3 bg-black text-white py-5 overflow-hidden fixed z-20 w-full drop-shadow-lg scrolled"
+      id="navbar">
+      <div class="flex items-center ml-5 md:ml-10 z-10 col-span-2 lg:col-span-1">
+        <img style="height: 30px" src="./assets/images/white_logo.png" alt="Elements Info Tech" />
+      </div>
+      <div class="col-span-1 lg:col-span-2 z-10">
+        <div class="flex justify-end lg:hidden h-9 pr-5">
+          <div class="navT relative w-14">
+            <div class="icon"></div>
+          </div>
+        </div>
+        <div class="hidden lg:grid grid-cols-3">
+          <div class="flex items-center col-span-2">
+            <ul class="flex gap-5">
+              <li>
+                <a class="hover:underline underline-offset-8" href="#main-banner">Home</a>
+              </li>
+              <li>
+                <a class="hover:underline underline-offset-8" href="#about-us">About Us</a>
+              </li>
+              <li>
+                <a class="hover:underline underline-offset-8" href="#services">Services</a>
+              </li>
+              <li>
+                <a class="hover:underline underline-offset-8" href="#meet-team">Meet the Team</a>
+              </li>
+              <li>
+                <a class="hover:underline underline-offset-8" href="#faqs">FAQ's</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <a href="#contact-us"
+              class="bg-white py-2 px-8 text-indigo-800 rounded-3xl shadow-lg shadow-indigo-500/70 text-sm font-semibold">Contact
+              Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="w-full fixed bg-black text-white left-0 top-16 z-20 max-h-0 overflow-hidden" id="mobile-menu">
+      <ul class="flex flex-col">
+        <li class="w-full flex">
+          <a class="hover:bg-indigo-500 p-5 flex justify-center w-full" href="#main-banner">Home</a>
+        </li>
+        <li class="w-full flex">
+          <a class="hover:bg-indigo-500 p-5 flex justify-center w-full" href="#about-us">About Us</a>
+        </li>
+        <li class="w-full flex">
+          <a class="hover:bg-indigo-500 p-5 flex justify-center w-full" href="#services">Services</a>
+        </li>
+        <li class="w-full flex">
+          <a class="hover:bg-indigo-500 p-5 flex justify-center w-full" href="#meet-team">Meet the Team</a>
+        </li>
+        <li class="w-full flex">
+          <a class="hover:bg-indigo-500 p-5 flex justify-center w-full" href="#faqs">FAQ's</a>
+        </li>
+      </ul>
+      <div class="flex justify-center items-center">
+        <a href="#contact-us"
+          class="bg-white py-2 px-8 text-indigo-800 rounded-3xl shadow-lg shadow-indigo-500/70 text-sm font-semibold my-10">Contact
+          Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Banner -->
+    <div class="bg-indigo-700 text-white relative py-28 lg:py-14 h-screen md:h-auto flex flex-col justify-center"
+      id="main-banner">
+      <div class="relative grid md:grid-cols-2 z-10">
+        <div class="mx-10 lg:mx-20 flex flex-col justify-center items-start">
+          <h1 class="hidden lg:block font-semibold text-5xl leading-snug">
+            Powerful Apps<br />Made To Measure
+          </h1>
+          <h1 class="block lg:hidden font-semibold text-4xl leading-snug">
+            Powerful Apps Made To Measure
+          </h1>
+          <p class="mt-6">
+            A wide range of services for enterprises, startups and ventures.
+          </p>
+          <a class="btn-border relative bg-white py-2 px-8 text-indigo-800 shadow-lg shadow-indigo-500/70 text-base font-semibold my-10 transition ease-in-out"
+            href="#services">Read More</a>
+        </div>
+        <div class="order-first md:order-last">
+          <div id="banner-img" class="hidden md:flex"></div>
+          <img class="flex md:hidden" src="./assets/images/banner-bg.png" alt="Powerful Apps" />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us" class="py-10">
+      <h1 class="font-semibold text-4xl text-center mb-8">About Us</h1>
+      <div class="flex items-center grid grid-cols-2">
+        <div class="col-span-2 lg:col-span-1 px-10 relative">
+          <div class="absolute w-64 md:w-80 left-0 -top-20 md:-top-40 -z-10 opacity-50">
+            <div id="about-us-circles-img" class="hidden md:flex"></div>
+            <!-- <img src="./assets/images/about-bg.png" class="flex md:hidden"/> -->
+          </div>
+          <h2 class="text-3xl font-semibold mb-8">
+            We Deliver Bespoke Software
+          </h2>
+          <p class="font-light">
+            We provide design and software digital services that are
+            fully-flexible and powerful. Order dedicated software for general
+            IT, CRM systems, web application development and more.
+            <br /><br />
+            We also offer marketing services via social media, social media
+            applications development & management, Information Technology
+            Network Services and Computer Systems & Communication Equipment
+            Software Design.
+            <br /><br />
+            With our considerable experience in the IT industry we encourage
+            our clients to open their business to new opportunities and bring
+            dreams to life. Software companies exist to solve problems and
+            help lives, and this is our utmost priority.
+            <br /><br />
+            We at ElementsInfoTech aim to produce useful programs that please
+            our clients with unique efficient software that meet clients
+            specific demands and fits into a workflow seamlessly.
+          </p>
+        </div>
+        <div class="hidden lg:block" id="about-us-img"></div>
+      </div>
+    </div>
+
+    <!-- Line Divider -->
+    <div class="h-px bg-gray-200 my-10 mx-10 md:mx-28"></div>
+
+    <!-- Mission Section -->
+    <div class="relative flex items-center justify-center" id="mission">
+      <div class="w-full sm:w-2/3 lg:w-1/2 mt-0 lg:mt-6">
+        <div id="mission-bg-circles-img" class="hidden md:flex"></div>
+        <img src="./assets/images/mission-bg.png" alt="Mission Image" class="flex md:hidden">
+      </div>
+      <div id="mission-bg" class="mission-bg absolute top-0"></div>
+      <div class="z-10 absolute text-center text-white w-4/5 lg:w-3/5 xl:w-2/5">
+        <h1 class="text-3xl md:text-5xl font-semibold mb-10">
+          Mission & Vision
+        </h1>
+        <p class="mb-5">
+          Our mission is to help startups and enterprises accelerate adoption
+          of new web technologies. We build consumer-oriented apps as well as
+          enterprise-grade business solutions.
+        </p>
+        <p class="mb-5 font-semibold italic">
+          "Leverage our expertise in startup and enterprise software
+          development, design solutions and API integration to improve the
+          future of your business processes."
+        </p>
+        <p class="font-bold">Company's CEO</p>
+      </div>
+    </div>
+
+    <!-- Line Divider -->
+    <div class="h-px bg-gray-200 my-10 mx-10 md:mx-28"></div>
+
+    <!-- Professional Services Section -->
+    <div id="services" class="relative flex flex-col justify-center items-center my-20">
+      <h1 class="font-semibold text-4xl text-center mb-8">
+        Professional Services
+      </h1>
+
+      <div id="purple-bg-1"></div>
+      <div id="purple-bg-2"></div>
+      <div class="container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+        <!-- Business Apps -->
+        <div
+          class="flex flex-col items-center justify-around ml-5 mr-5 2xl:ml-12 2xl:mr-12 px-5 md:px-10 2xl:px-20 service-card">
+          <div id="business-apps-img" class="hidden md:flex"></div>
+          <img src="./assets/images/business-apps.png" alt="Business Apps Image" class="flex md:hidden">
+          <div class="relative text-center md:text-left">
+            <h2 class="text-3xl font-semibold mb-8">Business Apps</h2>
+            <p class="font-light text-lg">
+              We develop and deliver cost-effective business applications and
+              operational software.
+            </p>
+          </div>
+        </div>
+
+        <!-- Data Migration -->
+        <div
+          class="flex flex-col items-center justify-around ml-5 mr-5 2xl:ml-12 2xl:mr-12 px-5 md:px-10 2xl:px-20 service-card mt-0 xl:mt-20">
+          <div id="data-migration-img" class="hidden md:flex"></div>
+          <img src="./assets/images/data-migration.png" alt="Data Migration Image" class="flex md:hidden">
+          <div class="relative text-center md:text-left">
+            <h2 class="text-3xl font-semibold mb-8">Data Migration</h2>
+            <p class="font-light text-lg">
+              We’ll create a safe information environment for data migration
+              based on your current system.
+            </p>
+          </div>
+        </div>
+
+        <!-- CRM Systems -->
+        <div
+          class="flex flex-col items-center justify-around ml-5 mr-5 2xl:ml-12 2xl:mr-12 px-5 md:px-10 2xl:px-20 service-card">
+          <div id="crm-systems-img" class="hidden md:flex"></div>
+          <img src="./assets/images/crm-systems.png" alt="CRM Systems Image" class="flex md:hidden">
+          <div class="relative text-center md:text-left">
+            <h2 class="text-3xl font-semibold mb-8">CRM Systems</h2>
+            <p class="font-light text-lg">
+              Improve your customer engagement with a bespoke, secure and
+              dedicated CRM system.
+            </p>
+          </div>
+        </div>
+
+        <!-- Startup Software -->
+        <div
+          class="flex flex-col items-center justify-around ml-5 mr-5 2xl:ml-12 2xl:mr-12 px-5 md:px-10 2xl:px-20 service-card">
+          <div id="startup-software-img" class="hidden md:flex"></div>
+          <img src="./assets/images/startup-software.png" alt="Startup Software Image" class="flex md:hidden">
+          <div class="relative text-center md:text-left">
+            <h2 class="text-3xl font-semibold mb-8">Startup Software</h2>
+            <p class="font-light text-lg">
+              We help startups and ventures with the most challenging tech
+              aspect of starting a project.
+            </p>
+          </div>
+        </div>
+
+        <!-- Consultancy -->
+        <div
+          class="flex flex-col items-center justify-around ml-5 mr-5 2xl:ml-12 2xl:mr-12 px-5 md:px-10 2xl:px-20 service-card mt:0 xl:mt-20">
+          <div id="consultancy-img" class="hidden md:flex"></div>
+          <img src="./assets/images//consultancy.png" alt="Consultancy Image" class="flex md:hidden w-1/2">
+          <div class="relative text-center md:text-left">
+            <h2 class="text-3xl font-semibold mb-8">Consultancy</h2>
+            <p class="font-light text-lg">
+              Our software consultants help define technology barriers to
+              improve business tech aspects.
+            </p>
+          </div>
+        </div>
+
+        <!-- White Label -->
+        <div
+          class="flex flex-col items-center justify-around ml-5 mr-5 2xl:ml-12 2xl:mr-12 px-5 md:px-10 2xl:px-20 service-card">
+          <div id="white-label-img" class="hidden md:flex"></div>
+          <img src="./assets/images/white-label.png" alt="White Label Image" class="flex md:hidden">
+          <div class="relative text-center md:text-left">
+            <h2 class="text-3xl font-semibold mb-8">White Label</h2>
+            <p class="font-light text-lg">
+              We can help you build white label software solutions that you
+              can license to your own clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meet Our Team Section -->
+    <div id="meet-team" class="my-20 pb-20">
+      <div class="mission-bg relative top-0 -z-10"></div>
+      <h1 class="block xl:hidden text-3xl font-semibold mb-0 text-center pt-20">
+        Meet our Team
+      </h1>
+      <div class="flex items-center justify-between">
+        <div
+          class="hidden xl:flex items-center justify-center bg-gray-100 text-6xl 2xl:text-8xl leading-snug font-bold rounded-full -ml-28 z-10"
+          id="meet-team-circle">
+          Meet our<br />Team
+        </div>
+        <div class="w-full xl:w-2/3 px-0 2xl:px-10 max-w-full overflow-visible xl:overflow-x-hidden">
+          <div class="swiper-container flex items-center relative">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex flex-col items-center">
+                <img src="./assets/images/team/m-sohaib.png" class="entity-img" />
+                <div class="content text-center mt-10">
+                  <p class="text-3xl font-bold">Muhammad Sohaib</p>
+                  <p class="text-lg font-semibold">ROR Developer</p>
+                  <p class="text-base">Muhammad.s@brooksdale.co.uk</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide flex flex-col items-center">
+                <img src="./assets/images/team/furqan.png" class="entity-img" />
+                <div class="content text-center mt-10">
+                  <p class="text-3xl font-bold">Furqan Ameen</p>
+                  <p class="text-lg font-semibold">ROR Developer</p>
+                  <p class="text-base">furqan.a@brooksdale.co.uk</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide flex flex-col items-center">
+                <img src="./assets/images/team/inam.png" class="entity-img" />
+                <div class="content text-center mt-10">
+                  <p class="text-3xl font-bold">Inam Ul-Rehman</p>
+                  <p class="text-lg font-semibold">ROR Developer</p>
+                  <p class="text-base">inam.r@brooksdale.co.uk</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide flex flex-col items-center">
+                <img src="./assets/images/team/amina.png" class="entity-img" />
+                <div class="content text-center mt-10">
+                  <p class="text-3xl font-bold">Amina Liaqat</p>
+                  <p class="text-lg font-semibold">Front End Developer</p>
+                  <p class="text-base">amina.l@brooksdale.co.uk</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide flex flex-col items-center">
+                <img src="./assets/images/team/javeria.png" class="entity-img" />
+                <div class="content text-center mt-10">
+                  <p class="text-3xl font-bold">Javairia Maqsood</p>
+                  <p class="text-lg font-semibold">Graphic Designer</p>
+                  <p class="text-base">javairia.m@brooksdale.co.uk</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide flex flex-col items-center">
+                <img src="./assets/images/team/ahsan.png" class="entity-img" />
+                <div class="content text-center mt-10">
+                  <p class="text-3xl font-bold">Ahsan Ali</p>
+                  <p class="text-lg font-semibold">SEO Specialist</p>
+                  <p class="text-base">ahsan.a@brooksdale.co.uk</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide flex flex-col items-center">
+                <img src="./assets/images/team/kareem.png" class="entity-img" />
+                <div class="content text-center mt-10">
+                  <p class="text-3xl font-bold">Kareem Dad</p>
+                  <p class="text-lg font-semibold">HR Manager</p>
+                  <p class="text-base">kareem.d@brooksdale.co.uk</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="absolute w-full bottom-20 lg:bottom-16 text-xs">
+              <div class="swiper-button-prev text-black"></div>
+              <div class="swiper-button-next text-black"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQs Section -->
+    <div id="faqs" class="flex justify-center py-20">
+      <div class="container">
+        <div class="flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+          <div class="w-1/2 md:w-1/4 -mt-36">
+            <div id="faq-img" class="hidden md:flex"></div>
+            <img src="./assets/images/faq-bg.png" alt="FAQ's Image" class="flex md:hidden" />
+          </div>
+          <h1 class="text-5xl md:text-7xl font-bold mr-0 md:mr-10">FAQ's</h1>
+          <p
+            class="border-0 md:border-l-2 border-gray-300 pl-0 md:pl-10 py-5 px-2 md:px-0 text-lg md:text-xl font-semibold">
+            Can’t find the answer you’re looking for?
+            <br />Reach out to our customer support team.
+          </p>
+        </div>
+        <div class="px-10">
+          <div class="mt-10">
+            <h2 class="font-bold text-xl mb-10">Can I get expert advice?</h2>
+            <p class="ml-0 md:ml-10 text-lg">
+              If you already have the concept and design, you can request our
+              free expert consultation and we’ll get back to you within one
+              week. If you need tech advice, you can book a premium one-hour
+              consultation.
+            </p>
+          </div>
+          <div class="mt-10">
+            <h2 class="font-bold text-xl mb-10">Do I own the app?</h2>
+            <p class="ml-0 md:ml-10 text-lg">
+              We take care of your ownership rights! You have the right to the
+              app we develop for your business needs. You also own the bespoke
+              design solutions we create according to your mockups and
+              instructions.
+            </p>
+          </div>
+          <div class="mt-10">
+            <h2 class="font-bold text-xl mb-10">
+              Do you restore broken software?
+            </h2>
+            <p class="ml-0 md:ml-10 text-lg">
+              We normally provide this service of restoring broken source code
+              repositories. However, since this is the most time-consuming and
+              challenging process, we need to firstly look through your
+              particular problem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Line Divider -->
+    <div class="h-px bg-gray-200 my-10 mx-10 md:mx-28"></div>
+
+    <!-- Contact Us Section -->
+    <div id="contact-us" class="flex justify-center my-48">
+      <div class="w-full lg:w-3/4 flex items-center justify-center relative">
+        <img src="./assets/images/contact-bg.png" class="absolute -z-10" style="height: 1100px; border-radius: 3rem" />
+        <div class="text-center flex flex-col items-center justify-center">
+          <h1 class="font-bold text-5xl lg:text-7xl">Get in touch</h1>
+          <p class="px-2 lg:px-10 font-light text-xl mt-5">
+            For any enquiries please feel free to email us and we will get
+            back to<br />you as soon as we can.
+          </p>
+          <form class="flex flex-col w-2/3 lg:w-1/2 justify-center items-center" action="contact.php" method="post"
+            role="form">
+            <input type="text" name="fname" placeholder="Full Name" class="mt-5 drop-shadow-lg h-16 px-10 w-full"
+              required />
+            <input type="text" name="email" placeholder="Email" class="mt-10 drop-shadow-lg h-16 px-10 w-full"
+              required />
+            <input type="text" name="subject" placeholder="Subject" class="mt-10 drop-shadow-lg h-16 px-10 w-full"
+              required />
+            <input type="text" name="phone" placeholder="Phone (Optional)"
+              class="mt-10 drop-shadow-lg h-16 px-10 w-full" />
+            <textarea name="message" id="message" rows="8" class="mt-10 drop-shadow-lg p-10 resize-none w-full"
+              placeholder="Type here..." required></textarea>
+            <button type="submit" class="btn-border bg-indigo-700 text-white mt-10 py-5 px-10 relative">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="p-10 bg-black text-white">
+      <!-- Footer Top Part -->
+      <div class="grid grid-cols-4 p-10">
+        <div class="space-y-10 flex flex-col col-span-4 lg:col-span-2 xl:col-span-1">
+          <img src="./assets/images/white_logo.png" alt="Elements Info Tech" class="w-56" />
+          <a href="tel:+97142204891" class="text-xl">+971 4220 4891</a>
+          <a href="mailto:support@elementsinfotech.ae">support@elementsinfotech.ae</a>
+        </div>
+        <div class="flex flex-col mt-8 col-span-4 lg:col-span-2">
+          <h4 class="font-bold text-lg mb-8">Quick Links</h4>
+          <ul class="flex flex-wrap font-light">
+            <a class="w-full lg:w-1/2 mb-4 lg:mb-8 opacity-50 hover:opacity-100" href="#services">
+              <li>Professional Services</li>
+            </a>
+            <a class="w-full lg:w-1/2 mb-4 lg:mb-8 opacity-50 hover:opacity-100" href="#about-us">
+              <li>About Us</li>
+            </a>
+            <a class="w-full lg:w-1/2 mb-4 lg:mb-8 opacity-50 hover:opacity-100" href="#contact-us">
+              <li>Contact Us</li>
+            </a>
+            <a class="w-full lg:w-1/2 mb-4 lg:mb-8 opacity-50 hover:opacity-100" href="">
+              <li>Terms & Conditions</li>
+            </a>
+          </ul>
+        </div>
+        <div class="flex flex-col mt-8 col-span-4 lg:col-span-2 xl:col-span-1">
+          <h3 class="font-bold text-lg mb-8">Customer Support</h3>
+          <div class="flex pr-0 lg:pr-14">
+            <input type="text" placeholder="Email"
+              class="px-5 h-14 rounded-tl-md rounded-bl-md text-indigo-800 w-40 md:w-auto lg:w-full" />
+            <button class="bg-indigo-700 h-14 w-14 rounded-tr-md rounded-br-md hover:bg-indigo-500">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Line Divider -->
+      <div class="h-px bg-gray-600 my-10 mx-10 md:mx-22"></div>
+
+      <!-- Footer Bottom Part -->
+      <div class="grid grid-cols-3 px-10">
+        <div class="space-x-4 flex justify-center lg:justify-start col-span-3 lg:col-span-1 mb-10 lg:mb-0">
+          <a href="https://www.linkedin.com/company/elements-info-tech/" target="_blank">
+            <div
+              class="rounded-full border-2 border-white text-lg h-12 w-12 flex items-center justify-center hover:border-indigo-500 hover:text-indigo-500">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </a>
+          <a>
+            <div
+              class="rounded-full border-2 border-white text-lg h-12 w-12 flex items-center justify-center hover:border-indigo-500 hover:text-indigo-500 cursor-pointer">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="flex justify-center items-center text-xs col-span-3 lg:col-span-1 opacity-40 mb-2 lg:mb-0">
+          <p class="flex gap-2">
+            All Services of
+            <img src="./assets/images/white_logo.png" alt="Elemnets info tech" class="w-28" />
+          </p>
+        </div>
+
+        <div
+          class="flex items-center justify-center lg:justify-end text-xs col-span-3 lg:col-span-1 opacity-40 text-center lg:text-start">
+          <p>© 2020 Elementsinfotech - All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./assets/js/lottiefiles.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

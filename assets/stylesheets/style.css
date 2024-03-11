@@ -1,0 +1,352 @@
+body {
+  overflow-x: hidden !important;
+}
+.site-container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+#navbar {
+  transition: all .5s ease-in-out;
+}
+#navbar.hide-navbar{
+  max-height: 0;
+  padding: 0;
+}
+#navbar::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(289.74deg, #001aff 15.37%, #6ee5c2 87.68%);
+  transform: matrix(-0.75, 0.03, -1.8, -1, 0, 0);
+  width: 35rem;
+  height: 200px;
+  border-radius: 50%;
+  top: -130%;
+  right: 0;
+  opacity: 0.3;
+  filter: blur(20px);
+}
+#navbar::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    75.96deg,
+    #ffc83a 13.64%,
+    #ff008a 46.53%,
+    #6100ff 78.88%
+  );
+  width: 35rem;
+  height: 200px;
+  border-radius: 50%;
+  top: -130%;
+  left: 0;
+  opacity: 0.3;
+  filter: blur(40px);
+}
+
+#navbar.scrolled {
+  backdrop-filter: blur(4px);
+  /* transition: background-color .3s cubic-bezier(.42, .00, .58, 1.00); */
+  background: rgb(0 0 0 / 60%);
+  max-height: max-content;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+/* Mobile Navbar */
+.navT .icon {
+  -webkit-transition: all 0.25s;
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  left: 15px;
+  top: 15px;
+  background-color: white;
+}
+.navT .icon:before, .navT .icon:after {
+  -webkit-transition: all 0.25s;
+  width: 30px;
+  height: 1px;
+  left: 0;
+  background: white;
+  position: absolute;
+  content: "";
+}
+.navT .icon:before {
+  top: -10px;
+}
+.navT .icon:after {
+  top: 10px;
+}
+.navT:hover .icon:before {
+  top: -12px;
+}
+.navT:hover .icon:after {
+  top: 12px;
+}
+.navT.active .icon {
+  -webkit-transform: rotate(180deg);
+  background-color: transparent;
+  left: 10px;
+}
+.navT.active .icon:before, .navT.active .icon:after {
+  top: 0;
+}
+.navT.active .icon:before {
+  -webkit-transform: rotate(45deg);
+}
+.navT.active .icon:after {
+  -webkit-transform: rotate(-45deg);
+}
+#mobile-menu {
+  transition: max-height .3s ease-in-out;
+}
+
+.btn-border::after,
+.btn-border::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+}
+
+.btn-border::after {
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.btn-border::before {
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.btn-border:hover::after,
+.btn-border:hover::before {
+  width: 30px;
+  height: 30px;
+  border-color: #fff;
+}
+
+/* Main Banner */
+#main-banner::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.25);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  bottom: -10%;
+  left: 5rem;
+  filter: blur(70px);
+}
+
+.divider {
+  height: 5px;
+  margin: 10px 30px;
+  background: gray;
+}
+
+/* Mission */
+#mission {
+  height: auto;
+}
+.mission-bg::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(289.74deg, #001aff 15.37%, #6ee5c2 87.68%);
+  transform: matrix(-0.94, 0.17, -0.39, -0.98, 0, 0);
+  width: 100rem;
+  height: 65rem;
+  border-radius: 50%;
+  /* top: -130%; */
+  right: 0;
+  opacity: 0.3;
+  filter: blur(20px);
+}
+.mission-bg::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    75.96deg,
+    #ffc83a 13.64%,
+    #ff008a 46.53%,
+    #6100ff 78.88%
+  );
+  width: 100rem;
+  height: 65rem;
+  border-radius: 50%;
+  /* top: -130%; */
+  left: 0;
+  opacity: 0.3;
+  filter: blur(40px);
+}
+
+/* Services */
+#purple-bg-1 {
+  position: absolute;
+  right: -200px;
+  top: 200px;
+  background: linear-gradient(
+    75.96deg,
+    #6b2dbe 13.64%,
+    #892dae 46.53%,
+    #6100ff 78.88%
+  );
+  width: 100%;
+  transform: rotate(15deg);
+  border-radius: 300px 0 0 300px;
+  height: 500px;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+#purple-bg-2 {
+  position: absolute;
+  left: -200px;
+  top: 800px;
+  background: linear-gradient(
+    75.96deg,
+    #6b2dbe 13.64%,
+    #892dae 46.53%,
+    #6100ff 78.88%
+  );
+  width: 100%;
+  transform: rotate(15deg);
+  border-radius: 0 300px 300px 0;
+  height: 500px;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.service-card {
+  background: white;
+  z-index: 10;
+  box-shadow: 4px 8px 10px 1px #3f2eae;
+  border-radius: 0px 50px;
+  height: 700px;
+}
+
+.consultancy {
+  width: 15rem !important;
+}
+
+/* Meet the Team */
+#meet-team {
+  overflow: hidden;
+}
+
+#meet-team .mission-bg::after {
+  filter: blur(100px);
+}
+#meet-team .mission-bg::before {
+  filter: blur(100px);
+}
+#meet-team-circle {
+  width: 50rem;
+  height: 50rem;
+}
+
+/* Team Slider */
+.swiper-container {
+  min-height: 1000px;
+}
+.swiper-slide {
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(100);
+  transform: scale(0.8) translateY(180px) !important;
+  margin-top: 20px;
+}
+.swiper-slide .content {
+  visibility: hidden;
+}
+.swiper-slide-active {
+  transform: scale(1.3) !important;
+  filter: grayscale(0);
+}
+.swiper-slide-active .content {
+  visibility: visible;
+}
+.swiper-slide-active img {
+  filter: contrast(1.2);
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 1.2rem !important;
+  color: black;
+}
+
+/* Contact Us */
+#contact-bg {
+  background: url(/assets/images/contact-bg.png) no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 60%;
+  height: 1000px;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 2000px) {
+  #meet-team-circle {
+    width: 40rem;
+    height: 40rem;
+  }
+  .swiper-container {
+    min-height: 700px;
+  }
+  .swiper-slide {
+    transform: scale(0.7) translateY(180px) !important;
+  }
+  .swiper-slide-active {
+    transform: scale(1) !important;
+    filter: grayscale(0);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .service-card {
+    margin: 3rem;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+#mission {
+    height: 30rem;
+  }
+  #mission-bg::after {
+    width: 50rem;
+    height: 30rem;
+    right: 0rem;
+  }
+  #mission-bg::before {
+    width: 50rem;
+    height: 30rem;
+    left: 0rem;
+  }
+  #contact-us img {
+    /* left: -10px; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swiper-container {
+    min-height: 300px;
+  }
+  .swiper-slide {
+    transform: scale(0.8) !important;
+    padding: 0 10px;
+    filter: grayscale(0);
+  }
+  #mission-bg::after {
+    right: -10rem;
+  }
+  #mission-bg::before {
+    left: -20rem;
+  }
+  .service-card {
+    height: 600px;
+  }
+}
